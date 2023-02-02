@@ -1,0 +1,115 @@
+.textInput-container {
+  position: relative;
+  width: 100%;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--primary-text-color);
+
+  &.textInput-container--error {
+    .textInput_input {
+      border: 2px solid var(--error_color) !important;
+    }
+  }
+
+  .textInput_input {
+    height: 54px;
+    width: 100%;
+
+    padding: 27px 0 11px 20px;
+
+    font: inherit;
+    outline: none;
+    border: none;
+    border: 2px transparent solid;
+    box-sizing: border-box;
+    color: var(--primary-text-color);
+    background-color: var(--card-color);
+
+    border: 2px solid #dedede;
+
+    border-radius: 4px;
+
+    &:focus {
+      border: 2px solid var(--main_color);
+    }
+  }
+
+  .textInput_label {
+    position: absolute;
+    transform-origin: 0 0;
+    font: inherit;
+    font-size: 11px;
+    top: 11px;
+    left: 20px;
+
+    color: var(--primary-text-color);
+    opacity: 0.8;
+
+    user-select: none;
+    cursor: text;
+
+    transition: 230ms ease-out;
+  }
+
+  .textInput-text {
+    width: 100%;
+    padding: 0px 15px 5px 20px;
+    margin-top: 8px;
+
+    height: 14px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .textInput_error {
+    color: var(--error_color);
+  }
+
+  .textInput_input:placeholder-shown + .textInput_label {
+    //color: var(--primary-text-color);
+    opacity: 1;
+    font-size: 16px;
+    top: 20px;
+  }
+
+  .textInput_input:focus + .textInput_label {
+    font-size: 11px;
+    top: 11px;
+  }
+
+  .textInput_end-icon {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 15px;
+    top: 0;
+    right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 24px;
+    width: 24px;
+    //padding: 6px;
+
+    //pointer-events: none;
+
+    transform-origin: 0 0;
+
+    z-index: 99;
+
+    svg {
+      path {
+        //fill: var(--primary-text-color);
+      }
+
+      font-size: 20px;
+    }
+  }
+}

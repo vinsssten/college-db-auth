@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+$lightGreen: #27da2780;
+$greenButton: #2d922d;
+$greenButton-hover: #247424;
+
+$lightRed: #dd252580;
+$darkRed: #be0202;
+
+$gray: #6e6e6e;
+$gray-light: #f0f0f0;
+$gray-dark: #212529;
+$gray-hover: #4e4e4e;
+
+:root {
+  --primary-color: #2f3450;
+  --error_color: #ff6e4e;
+  --success_color: #84f86e;
+}
+
+:root {
+  --primary-text-color: var(--primary-color);
+  --primary-inversed-text-color: #ffffff;
+  --card-color: #ffffff;
+  --card-inversed-color: var(--primary-color);
+
+  --border-color: #353b5433;
+
+  --shadow-primary-color: #2f345033;
+
+  --overlapping-color: rgba(0, 0, 0, 0.3);
+
+  --tab-button-color-primary: #eaeef4;
+  --tab-button-color-secondary: #1e203e;
+
+  --main_color: #2f3450;
+  --main_color-active: #4f567e;
+  --main_color-disabled: #43444d;
+  --main_color-secondary: #e5e5e5;
+
+  --background-color: #f2f2f2;
+  --header_color: #f2f2f2;
+
+  --navigation_color-background: #2f3450;
+  --navigation_color: #d6dded;
+
+  --button_color: #ffd099;
+  --button_color-hover: #ffb053;
+  --button_color-font: black;
+
+  --text_color-main: #2f3450;
+  --text_color-main-hover: #313030;
+  --text_color-gray: #1e203e4d;
+
+  --table_row-hover: white;
+}
+
+:root[data-theme='dark'] {
+  --primary-text-color: #ffffff;
+  --primary-inversed-text-color: #2f3450;
+  --card-color: var(--primary-color);
+  --card-inversed-color: #ffffff;
+
+  --border-color: rgba(255, 255, 255, 0.3);
+
+  --shadow-primary-color: #00000040;
+
+  --overlapping-color: rgba(255, 255, 255, 0.3);
+
+  --tab-button-color-primary: #eaeef4;
+  --tab-button-color-secondary: #1e203e;
+
+  --main_color: #2f3450;
+  --main_color-active: #4f567e;
+  --main_color-disabled: #424550;
+  --main_color-secondary: #e5e5e5;
+
+  --background-color: #1e203e;
+  --header_color: #1e203e;
+  --header_color: #1e203e;
+
+  --navigation_color-background: #2f3450;
+  --navigation_color: #c6e9ec;
+
+  --button_color: #ffd099;
+  --button_color-hover: #ffb053;
+  --button_color-font: black;
+
+  --text_color-main: white;
+  --text_color-main-hover: #f6f6f6;
+  --text_color-gray: #1e203e4d;
+
+  --table_row-hover: #2f3450;
+}
